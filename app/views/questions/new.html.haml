@@ -1,0 +1,21 @@
+
+  %h3 今日の問題
+  %p
+    =@question.text
+.form
+  %input.answer
+  %br
+  %input{:type => "submit", :value => "send", :class => "btn"}
+
+%audio{:src=>"../../assets/audios/passer-montanus-cry1.mp3", :controls=>"controls"}
+-# <input type="text" id="name" name="user_name" class="answer">
+
+-# <a class="btn" href="/questions/create">回答する</a> %>
+
+-# <%= form_tag("/questions", method: :post) do%>
+-#       <h3>
+-#         回答する
+-#       </h3>
+-#       <textarea cols="30" name="user_answer" placeholder="text" rows="10"></textarea>
+-#       <input type="submit" value="SENT">
+-# <% end %>
